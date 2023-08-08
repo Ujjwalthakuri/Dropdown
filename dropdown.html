@@ -1,0 +1,122 @@
+<html>
+    <head>
+      <title>Dropdowm</title>
+      <style>
+          *{
+                margin: 0;
+                padding: 0;
+                overflow:unset;
+            }
+            .nav-bar{
+                background-color:rgba(137, 43, 226, 0.897);
+                display:flex;
+                justify-content:space-between;
+                padding:20px;
+            }
+            .nav-bar h2{
+                color:bisque;
+                font-size:4vmin;
+                font-family:sans-serif;
+            }
+            .nav-bar h2::after{
+                content:'';
+                width:100px;
+                height:2px;
+                display:block;
+                background-color:rgb(248, 8, 156);
+            }
+            .main-bar ul{
+                display:inline-flex;
+                list-style:none;
+                /* padding:4px; */
+            }
+            .main-bar ul li{
+                width:150px;
+                /* margin:15px; */
+                padding:15px;
+            }
+            .main-bar ul li a{
+                color:antiquewhite;
+                text-decoration:none;
+                font-size:20px;
+                transition:0.5s;
+                /* font-weight:bold; */
+            }
+            .main-bar ul li a:hover{
+                /* font-size:25px; */
+            }
+            .main-bar .sub-bar{
+                display:none;
+            }
+            .main-bar ul li:hover .sub-bar{
+                display:block;
+                position:absolute;
+                background-color:rgb(153, 77, 224);
+                margin-top:10px;
+                padding:20px;
+            }
+            .main-bar ul li:hover .sub-bar ul{
+                display:block;
+            }
+            .main-bar ul li:hover .sub-bar ul li{
+                text-align:left;
+                border-bottom:1px solid rgb(240, 6, 96);
+                /* background-color:aqua; */
+                padding:20px;
+            }
+            .main-bar ul li:hover .sub-bar ul li:last-child{
+                border:none;
+            }
+            .sub-bar .sub-bar-one{
+                display:none;
+            }
+            .sub-bar ul li:hover .sub-bar-one{
+                display:block;
+                position:absolute;
+                margin-left:50%;
+                margin-top:8px;
+                background-color:rgb(153, 77, 224);
+                /* border:2px solid red; */
+            }   
+      </style>
+    </head>
+    <boody>
+        <div class="nav-bar">
+            <h2>
+                BB Group
+            </h2>
+            <div class="main-bar">
+            <ul>
+                <li><a href="#">Home</a> </li>
+                <li><a href="#">Service</a>
+                <div class="sub-bar">
+                    <ul>
+                        <li><a href="#">Language</a> 
+                        <div class="sub-bar-one">
+                            <ul>
+                                <li><a href="#">JAVA</a> </li>
+                                <li><a href="#">PYTHON</a> </li>
+                                <li><a href="#">C++</a> </li>
+                            </ul>
+                        </div>
+                        </li>
+                        <li><a href="#">Database</a></li>
+                        <li><a href="#">Network</a> </li>
+                    </ul>
+                </div>
+                </li>
+                <li><a href="#">About</a>
+                    <div class="sub-bar">
+                        <ul>
+                            <li><a href="#">Coding</a> </li>
+                            <li><a href="#">Cyber Security</a> </li>
+                            <li><a href="#">Data management</a> </li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">Contact</a> </li>
+            </ul>
+        </div>
+        </div>
+    </boody>
+</html>
